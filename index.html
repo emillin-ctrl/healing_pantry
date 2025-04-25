@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healing Pantry - Plate Builder</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" href="images/black_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- =SKIP LINK= -->
+  <div class="skip"><a href="#main" tabindex="0">Skip to Main Content</a></div>
+  <!-- =HEADER SECTION= -->
+  <header class="header">
+    <div class="header-content">
+        <nav class="navbar">
+            <img src="images/black_icon.png" alt="Healing Pantry Icon" class="logo">
+            <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#plate-explorer" class="nav-link">Explore</a></li>
+            <li class="nav-item"><a href="#footer" class="nav-link">Resources</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </div>
+  </header>
+  <main>
+    <!-- =HERO SECTION= -->
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">Welcome to the Healing Pantry</h1>
+
+          <p class="hero-p"> This tool uses Harvard's Healthy Eating Plate structure to help you build meals that support balance and well-being. Explore a new way to connect with food without numbers and tracking. Mix and match ingredients to fit your balanced plate.</p>
+
+          <div class="btn-group">
+            <a href="https://nutritionsource.hsph.harvard.edu/healthy-eating-plate/" target = "_blank" class="btn btn-primary">The Plate Method</a>
+            <a href="https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2012/09/HEPJan2015.jpg" target = "_blank" class="btn btn-secondary">Download Blueprint</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+          <img src="./images/hero.png" alt="Julia Walker" class="hero-img">
+        </div>
+
+      </div>
+
+    </div>
+    <div class="main" id ="main">
+      <div class="container">
+        <!-- =PLATE EXPLORER CARDS= -->
+        <div class="explorer" id="plate-explorer">
+          <h2 class="h2">Plate Explorer</h2>
+          <div class="explorer-card-group">
+            <!--Whole Grain Bread-->
+            <div class="explorer-card" data-topic="Carbs">
+
+              <div class="explorer-card-banner">
+                <img src="./images/bread.png" alt="" class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+                <button class="explorer-topic text-sm">Carbs</button>
+                <h3>
+                  <a href="https://nutritionsource.hsph.harvard.edu/what-should-you-eat/whole-grains/"  target="_blank" class="h3">
+                    Whole Grain Bread
+                  </a>
+                </h3>
+                <p class="explorer-text">
+                  <strong>Uses</strong> Infused in teas, oatmeal, or milk for gentle evening routine <br>
+                  #calming #sleep #digestion
+                </p>
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/breakfast_sandwich.jpeg" alt="Power Veggie Sandwich">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://lovelylittlekitchen.com/power-veggie-sandwich/" target="_blank" class="h4">Power Veggie Sandwich</a>
+
+                    <p class="text-sm">
+                      Lunch Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      15 min
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+             <!--Sweet Potato-->
+            <div class="explorer-card" data-topic="Produce">
+
+              <div class="explorer-card-banner">
+                <img src="./images/sweet_potato.jpg" alt="Fast web page loading on a $20 feature phone"
+                  class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+
+                <button class="explorer-topic text-sm">Produce</button>
+
+                <h3><a href="https://nutritionsource.hsph.harvard.edu/food-features/sweet-potatoes/" target = "_blank" class="h3">Sweet Potato</a></h3>
+
+                <p class="explorer-text">
+                  Feature phones are affordable (under $20-25), low-end devices enabling 100s of millions of users in
+                  developing countries
+                  to leverage the web. Think of them as a light version of a smart phone.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/sweet_potato_hash.jpeg" alt="Sweet Potato Hash">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://downshiftology.com/recipes/sweet-potato-breakfast-hash/" target="_blank" class="h4">Sweet Potato Hash</a>
+
+                    <p class="text-sm">
+                      Brunch Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      35 min
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--Greek Yoghurt-->
+            <div class="explorer-card" data-topic="Protein">
+
+              <div class="explorer-card-banner">
+                <img src="./images/yoghurt.jpeg" alt="Greek Yoghurt"
+                  class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+
+                <button class="explorer-topic text-sm">Protein</button>
+
+                <h3><a href="https://nutritionsource.hsph.harvard.edu/dairy/" target = "_blank" class="h3">Greek Yoghurt</a></h3>
+
+                <p class="explorer-text">
+                  It's awesome to build sites that are inclusive and accessible to everyone. There are at least six key
+                  areas of
+                  disability we can optimize for: visual, hearing, mobility, cognition, speech and neural. Many tools
+                  and resources can
+                  help here, even if you're totally new to web accessibility.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/greek_yoghurt_bowl.jpeg" alt="Greek Yoghurt Bowl" >
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://www.modernhoney.com/greek-yogurt-breakfast-bowls-toppings/" target="_blank" class="h4">Greek Yoghurt Bowl</a>
+
+                    <p class="text-sm">
+                      Breakfast Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      5 min
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <!--Rolled Oats-->
+            <div class="explorer-card" data-topic="Carbs">
+
+              <div class="explorer-card-banner">
+                <img src="./images/oats.jpeg" alt="Dynamically Securing Databases using Hashicorp Vault"
+               class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+
+                <button class="explorer-topic text-sm">Carbs</button>
+
+                <h3><a href="https://nutritionsource.hsph.harvard.edu/food-features/oats/" target ="_blank" class="h3">Rolled Oats</a></h3>
+
+                <p class="explorer-text">
+                  Nowadays, it's hard to profoundly talk about security in the IT industry, since it has to be
+                  considered on so many
+                  different levels: from securing code chunks, securing containers, up to securing complex
+                  infrastructures and defining
+                  strong authorization and authentication policies across the enterprise.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/oatmeal_bowl.png" alt="Oatmeal Breakfast Bowl">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://www.twopeasandtheirpod.com/oatmeal-breakfast-bowls/" target="_blank" class="h4">Oatmeal Breakfast Bowl</a>
+
+                    <p class="text-sm">
+                      Breakfast Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      15 min
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--Avocado-->
+            <div class="explorer-card" data-topic="Produce">
+
+              <div class="explorer-card-banner">
+                <img src="./images/avocado.png"
+                  alt="Adaptive Loading - Improving Web Performance on low-end devices" 
+                  class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+
+                <button class="explorer-topic text-sm">Produce</button>
+
+                <h3><a href="https://nutritionsource.hsph.harvard.edu/avocados/" target ="_blank" class="h3">Avocado</a></h3>
+
+                <p class="explorer-text">
+                  Adaptive Loading: Do not just respond based on screen size, adapt based on actual device hardware.
+                  Any user can have a slow experience. In a world with widely varying device capabilities, a "one-size"
+                  fits all
+                  experience may not always work. Sites that delight users on high-end devices can be unusable on
+                  low-end ones,
+                  particularly on median mobile and desktop hardware and in emerging markets.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/chicken_avocado_wrap.jpeg" alt="Chicken Avocado Wrap">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://gimmedelicious.com/crispy-chicken-and-avocado-wraps/" target="_blank" class="h4">Chicken Avocado Wrap</a>
+
+                    <p class="text-sm">
+                      Lunch Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      10 min
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--Eggs-->
+            <div class="explorer-card" data-topic="Protein">
+
+              <div class="explorer-card-banner">
+                <img src="./images/egg.jpeg"
+                  alt="Don't Develop Just for Yourself - A Developer's Checklist to Accessibility"
+                  class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+
+                <button class="explorer-topic text-sm">Protein</button>
+
+                <h3><a href="https://nutritionsource.hsph.harvard.edu/food-features/eggs/" target = "_blank" class="h3">Eggs</a>
+                </h3>
+
+                <p class="explorer-text">
+                  We, as developers, tend to develop sites unconsciously for people like ourselves. If we don't actively
+                  pay attention,
+                  the sites are often accessible only for certain types of people: Sighted mouse-users, who have good
+                  fine motor skills
+                  and are good at using computers.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/eggs_on_toast.jpeg" alt="Eggs on Toast">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://www.wellseasonedstudio.com/smashed-eggs-on-toast/" target="_blank" class="h4">Eggs on Toast</a>
+
+                    <p class="text-sm">
+                      Breakfast Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      10 min
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--Granola-->
+            <div class="explorer-card" data-topic="Carbs">
+
+              <div class="explorer-card-banner">
+                <img src="./images/granola.jpeg"
+                  alt="Building a Restful CRUD API with Node JS, Express, and MongoDB"
+                  class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+
+                <button class="explorer-topic text-sm">Carbs</button>
+
+                <h3><a href="https://nutritionsource.hsph.harvard.edu/food-features/oats/" target ="_blank" class="h3">Granola</a></h3>
+
+                <p class="explorer-text">
+                  Application Programming Interface is the abbreviation for API. An API is a software interface that
+                  enables two apps to
+                  communicate with one another. In other words, an API is a messenger that sends your request to the
+                  provider and then
+                  returns the response to you.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/granola_yoghurt_bowl.jpeg" alt="Granola Yoghurt Bowl">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://www.jaroflemons.com/granola-breakfast-bowl/" target="_blank" class="h4">Granola Yoghurt Bowl</a>
+
+                    <p class="text-sm">
+                      Breakfast Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      5 min
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--Banana-->
+            <div class="explorer-card" data-topic="Produce">
+
+              <div class="explorer-card-banner">
+                <img src="./images/banana.jpeg" alt="Monitoring Performance with the PageSpeed Insights API"
+                 class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+
+                <button class="explorer-topic text-sm">Produce</button>
+
+                <h3><a href="https://nutritionsource.hsph.harvard.edu/food-features/bananas/" target ="_blank" class="h3">Banana</a></h3>
+
+                <p class="explorer-text">
+                  The PageSpeed Insights API provides free access to performance monitoring for web pages and returns
+                  data with
+                  suggestions for how to improve. The V5 API includes lab data from Lighthouse and real-world data from
+                  the Chrome User
+                  Experience Report (CrUX).
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/banana_protein_bar.jpeg" alt="Banana Protein Bar">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://forkfulofplants.com/banana-breakfast-bars-recipe/" target="_blank" class="h4">Protein Banana Bars</a>
+
+                    <p class="text-sm">
+                      Snack Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      20 min
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+            <!--Peanutbutter-->
+            <div class="explorer-card" data-topic="Protein">
+
+              <div class="explorer-card-banner">
+                <img src="./images/peanutbutter.jpeg" alt="The best web accessibility tools for developers in 2021"
+                  class="explorer-banner-img">
+              </div>
+
+              <div class="explorer-content-wrapper">
+
+                <button class="explorer-topic text-sm">Protein</button>
+
+                <h3><a href="https://nutritionsource.hsph.harvard.edu/legumes-pulses/" target = "_blank" class="h3">Peanutbutter</a>
+                </h3>
+
+                <p class="explorer-text">
+                  The quality of the tools you use defines the speed with which you can diagnose and resolve problems.
+                  Each year the landscape changes dramatically in web technologies, and of late the tooling for
+                  accessibility is no
+                  exception.
+                </p>
+                <div class="wrapper-flex">
+
+                  <div class="recipe-wrapper">
+                    <img src="./images/pb_bites.jpeg" alt="Chocolate PB Bites">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://www.bakerita.com/crispy-chocolate-peanut-butter-treats/" target="_blank" class="h4">Chocolate PB Bites</a>
+
+                    <p class="text-sm">
+                      Snack Recipe
+                      <ion-icon name="time-outline" aria-label="Time required"></ion-icon>
+                      15 min
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- PLATE FILTERS-->
+
+        <div class="plate-filter">
+          <div class="topics">
+            <h2 class="h2">Plate Filters</h2>
+        
+            <a href="#" class="topic-btn" data-filter="All">
+              <div class="icon-box">
+                <img src="./images/icon_all.png" alt="All Categories Icon" class ="filter-icon">
+              </div>
+              <p>All Categories</p>
+            </a>
+            <a href="#" class="topic-btn" data-filter="Carbs">
+              <div class="icon-box">
+                <img src="./images/icon_carbs.png" alt="All Categories Icon" class ="filter-icon">
+              </div>
+              <p>Carbs</p>
+            </a>
+            <a href="#" class="topic-btn" data-filter="Produce">
+              <div class="icon-box">
+                <img src="./images/icon_produce.png" alt="All Categories Icon" class ="filter-icon">
+              </div>
+              <p>Produce</p>
+            </a>
+            <a href="#" class="topic-btn" data-filter="Protein">
+              <div class="icon-box">
+                <img src="./images/icon_protein.png" alt="All Categories Icon" class ="filter-icon">
+              </div>
+              <p>Protein</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer id="footer">
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="./images/black_icon.png" alt="Healing Pantry Logo" class="logo">
+        </a>
+
+        <p class="footer-text">
+          Emily Lin's SI539 Final Project. Inspired by the Healthy Eating Plate by Harvard School of Public Health.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">More Resources</p>
+
+        <ul>
+
+          <li>
+            <a href="https://nutritionsource.hsph.harvard.edu/" target = "_blank" class="footer-link">The Nutrition Source</a>
+          </li>
+
+          <li>
+            <a href="https://www.theprojectheal.org/?gad_source=1&gbraid=0AAAAADl5WenqtHATzI7XJE12VqmcHLdNo" target = "_blank" class="footer-link">Project HEAL</a>
+          </li>
+          <li>
+            <a href="https://www.nationaleatingdisorders.org/eating-disorders-support-groups/" target ="_blank" class="footer-link">NEDA Support Groups</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">More Tools</p>
+
+        <ul>
+
+          <li>
+            <a href="https://www.recoveryrecord.com/" target = "_blank"class="footer-link">Recovery Record</a>
+          </li>
+
+          <li>
+            <a href="https://nutritionsource.hsph.harvard.edu/intuitive-eating/" target ="_blank" class="footer-link">Intuitive Eating Principles</a>
+          </li>
+
+          <li>
+            <a href="https://christyharrison.com/foodpsych" target = "_blank"class="footer-link">Food Psych Podcast</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

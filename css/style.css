@@ -1,0 +1,609 @@
+/*=== UNIVERSAL RESET ===*/
+*, *::before, *::after {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  img, button {
+    display: block;
+  }
+  
+  a, span {
+    display: inline-block;
+  }
+  
+  button {
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  html {
+    font-family: "Poppins", sans-serif;
+    line-height: 2;
+  }
+  
+  :focus {
+    outline-offset: 3px;
+  }
+  
+  /*=== SKIP TO MAIN ===*/
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .skip a{
+    position: absolute;
+    top: -40px;
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  .skip a:focus {
+    top: 20px;
+    z-index: 1001;
+  }
+  /*=== MAIN STYLING ===*/
+  .h1,
+  .h2,
+  .h3,
+  .h4 {
+    display: block;
+    color: #014827;
+  }
+  
+  .h1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  .h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .h4 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .text-sm {
+    font-size: .85rem;
+  }
+  
+  .container {
+    margin-inline: auto;
+    margin: auto;
+    padding: 0 15px;
+  }
+  
+  .btn {
+    min-width: 10rem;
+    border-radius: 10px;
+  }
+  
+  .btn-primary {
+    background: #014827;
+    color: white;
+    padding: 0.6875rem 1.1875rem;
+  }
+  
+  .btn-secondary {
+    background: #EFEEE5;
+    color: #014827;
+    padding: 0.5rem 1rem;
+    border: 3px solid #014827;
+  }
+  
+  .btn-primary:hover, .btn-secondary:hover {
+    color: #014827;
+    background-color: #FFCB05;
+  }
+  
+  ion-icon{
+    margin-left: 15px;
+  }
+  
+  /*=== HEADER STYLING ===*/
+  .header {
+    background-color:#EFEEE5;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* LOGO */
+  .logo {
+    width: 80px;
+  }
+  
+  /*
+  NAVIGATION MENU STYLING
+  Based on: Web Dev Tutorials, YouTube
+  "JavaScript - How to Create a Responsive Hamburger Menu with HTML, CSS, & JavaScript"
+  https://www.youtube.com/watch?v=flItyHiDm7E
+  Accessed April 2025
+  This CSS was adapted for responsive layout and accessibility in SI539
+  */
+  
+  /* NAVBAR FLEX CONTAINER */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 24px;
+  }
+  
+  /* NAV MENU (MOBILE DEFAULT) */
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #EFEEE5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    text-align: center;
+    gap: 16px;
+    padding-top: 2rem;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-link {
+    color:#014827;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #014827;
+    background-color: #FFCB05;
+  }
+  
+  /* NAV ITEM */
+  .nav-item {
+    margin: 8px 0;
+  }
+  
+  /* HAMBURGER ICON */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #004323;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  /*=== HERO ICON ===*/
+  
+  .hero {
+    background: #EFEEE5;
+    padding-top:    2rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    padding: 80px 1rem 80px 1rem; /* Top padding to push content below header */
+  }
+  
+  .hero .h1 {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .hero-p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #014827;
+  }
+  
+  .hero .btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .hero .right {
+    display: none;
+  }
+  
+  
+  /*=== FOOD EXPLORER CARDS ===*/
+  /*--------------------------------------------------------------
+  Food Explorer Cards - Adapted from personal blog cards by CodeWithSadee
+  Original Source: https://github.com/codewithsadee/codewithsadee
+  MIT License
+  --------------------------------------------------------------*/
+  
+  .main {
+    background: white;
+    padding: 6rem 0;
+  }
+  
+  .explorer .h2 {
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .explorer-card {
+    padding: 15px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #ccc;
+    transition: 0.25s ease;
+  }
+  
+  .explorer-card.hidden {
+    display: none;
+  }
+  
+  .explorer-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 10px #e5e4e4;
+  }
+  
+  .explorer-card-banner {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .explorer-banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .explorer-content-wrapper { 
+    padding: 10px 5px;
+  }
+  
+  .explorer-topic {
+    background: #EFEEE5;
+    color: #014827;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .explorer-topic:hover {
+    background: #FFCB05;
+    color: #014827;
+  }
+  
+  .explorer-card .h3 {
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  .explorer-card .h3:hover, .explorer-card .h4:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  .explorer-text,
+  .recipe-wrapper {
+    display: none;
+  }
+  
+  .explorer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .explorer .h4 { 
+    color: #014827;
+  }
+  
+  .explorer .h4:hover { 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  .plate-filter {
+    display: none;
+  }
+  
+  /*=== FOOTER ===*/
+  
+  footer {
+    background: #014827;
+  }
+  
+  footer .container {
+    padding: 5rem 15px;
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 40px;
+  }
+  
+  footer .wrapper {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-text {
+    color: white;
+  }
+  
+  .footer-title {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+  
+  .footer-link {
+    color: white;
+  }
+  
+  .footer-link:hover {
+    color: #FFCB05;
+  }
+  
+  
+  /*=== MEDIA QUERIES ===*/
+  
+  /* =DESKTOP STYLING=*/
+   @media (min-width: 768px) {
+       /* =NAVIGATION= */
+       .nav-menu {
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        height: auto;
+        left: auto;
+        width: auto;
+        padding: 0;
+        gap: 60px;
+      }
+  
+      .nav-link {
+        color: #004323;
+        font-weight: 600;
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+      }
+  
+      .nav-link:hover,
+      .nav-link:focus {
+        color: #014827;
+        background-color: #FFCB05;
+      }
+      .hamburger {
+        display: none;
+      }
+  
+    /* =HERO SECTION= */
+    .hero {
+      text-align: left;
+    }
+  
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+    }
+  
+    .hero .btn-group {
+      justify-content: start;
+      gap: 30px;
+    }
+  
+    .hero .right {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .hero-img {
+      width:  100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
+  /* =MAIN= */
+    .main .container {
+      display: grid;
+      grid-template-columns: 5fr 1.5fr;
+      gap: 60px;
+    }
+  
+    /* =PLATE FILTER= */
+    .plate-filter {
+      display: block;
+      align-self: stretch;
+    }
+  
+    .plate-filter .h2 {
+      color: #014827;
+      margin-bottom: 3rem;
+      text-align: center;
+      line-height: 1.3;
+    }
+  
+    .plate-filter .wrapper {
+      background: #EFEEE5;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 5px 5px #ccc;
+    }
+  
+    .topic-btn {
+      display: flex;
+      align-items: stretch;
+      background: #EFEEE5;
+      border-radius: 10px;
+      box-shadow: 0 5px 5px #ccc;
+      overflow: hidden;
+    }
+  
+    .topic-btn:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  
+    .topic-btn .icon-box {
+      font-size: 22px;
+      width: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #EFEEE5;
+      color: #014827;
+    }
+  
+    .topic-btn:hover .icon-box {
+      background: #FFCB05;
+      color: #014827;
+    }
+  
+    .topic-btn p {
+      padding: 15px;
+      color: #014827;
+    }
+  
+    .filter-icon {
+      width:  45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+      /* =FOOD EXPLORER= */
+      .explorer-card {
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+        gap: 50px;
+      }
+      .explorer-card-banner {
+        display: block;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+      .explorer-banner-img {
+        width:  100%;
+        height: 100%;
+        max-height: fit-content;
+        object-fit: contain;
+      }
+    .container {
+      padding: 0 30px;
+    }
+  
+    .explorer .h2 {
+      position: relative;
+      text-align: left;
+    }
+  
+    .explorer-text,
+    .recipe-wrapper {
+      display: block;
+    }
+  
+    .explorer-text {
+      color: black;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .explorer .wrapper-flex .h4 {
+      color:#014827;
+    }
+    .explorer .wrapper-flex {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+    }
+  
+  
+    .recipe-wrapper img {
+      border-radius: 50%;
+      width: 50px;
+    }
+  
+    .explorer .wrapper {
+      flex-direction: column;
+      align-items: start;
+      gap: 0;
+    }
+  
+    /* =FOOTER= */
+  
+    footer .container {
+      padding: 5rem 30px;
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+    footer .wrapper {
+      text-align: left;
+    }
+    .footer-text {
+      margin: 0;
+    }
+    .container {
+      max-width: 1150px;
+    }
+  
+  }

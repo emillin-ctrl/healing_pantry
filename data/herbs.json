@@ -1,0 +1,50 @@
+[
+    {
+      "name": "Chamomile",
+      "image": "assets/images/chamomile.jpg",
+      "uses": "Infused in teas, oatmeal, or milk for gentle evening routines",
+      "magicalProperties": ["Soothing", "Peace", "Dreamwork"],
+      "recoverySupport": "Supports parasympathetic activation and mealtime calm, especially during post-meal anxiety.",
+      "topics": ["Calming", "Sleep", "Digestion"]
+    },
+    {
+      "name": "Ginger",
+      "image": "assets/images/ginger.png",
+      "uses": "Used in stir-fries, soups, or tea to warm and stimulate digestion",
+      "magicalProperties": ["Empowerment", "Warming", "Circulation"],
+      "recoverySupport": "Helps reestablish connection to warmth and internal cues after periods of restriction or numbness.",
+      "topics": ["Digestion", "Warming", "Energy"]
+    },
+    {
+      "name": "Lavender",
+      "image": "assets/images/lavender.jpg",
+      "uses": "Used in baked goods, infused in honey or milk, or for aroma rituals",
+      "magicalProperties": ["Calm", "Protection", "Clarity"],
+      "recoverySupport": "Provides sensory regulation and meal-time rituals, especially for grounding in emotional eating recovery.",
+      "topics": ["Aromatherapy", "Mood", "Sleep"]
+    },
+    {
+      "name": "Dandelion",
+      "image": "assets/images/dandelion.png",
+      "uses": "Leaves used in salads, root roasted for coffee alternatives, flowers for syrup",
+      "magicalProperties": ["Resilience", "Rebirth", "Wishes"],
+      "recoverySupport": "Encourages body trust and symbolic growth; bitter flavor reconnects users with whole-body sensations.",
+      "topics": ["Liver", "Bitters", "Self-Acceptance"]
+    },
+    {
+      "name": "Rosemary",
+      "image": "assets/images/rosemary.jpg",
+      "uses": "Adds depth to roasted veggies, stews, or infused oils",
+      "magicalProperties": ["Memory", "Cleansing", "Vitality"],
+      "recoverySupport": "Encourages grounding during meal prep and supports sensory memory healing from past food fears.",
+      "topics": ["Focus", "Grounding", "Digestion"]
+    },
+    {
+      "name": "Cinnamon",
+      "image": "assets/images/cinnamon.jpg",
+      "uses": "Used in warm breakfast bowls, baked goods, or tea",
+      "magicalProperties": ["Warmth", "Protection", "Sweetness"],
+      "recoverySupport": "Reclaims sweetness and safety around comfort foods, challenging restrictive beliefs with warmth.",
+      "topics": ["Comfort", "Blood Sugar", "Spice"]
+    }
+  ]  
